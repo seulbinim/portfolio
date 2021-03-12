@@ -7,19 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>슬비의 포트폴리오</title>
   <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div id="fullpage">
-    <div class="section">Some section1</div>
-    <div class="section">
-      <div class="slide" data-anchor="slide1"> Slide 1 </div>
-      <div class="slide" data-anchor="slide2"> Slide 2 </div>
-      <div class="slide" data-anchor="slide3"> Slide 3 </div>
-      <div class="slide" data-anchor="slide4"> Slide 4 </div>
+  <div id="fullpage" class="container">
+    <div class="section group1">
+      <div class="welcome">Hello! 반가워요 :)</div>
     </div>
-    <div class="section">Some section3</div>
-    <div class="section">Some section4</div>
+    <div class="section group2">
+      <div class="slide card1" data-anchor="slide1"><img src="./images/card1.jpg" alt=""></div>
+      <div class="slide card2" data-anchor="slide2"><img src="./images/card2.jpg" alt=""></div>
+      <div class="slide card2" data-anchor="slide3"><img src="./images/card3.jpg" alt=""></div>
+      <div class="slide card4" data-anchor="slide4"><img src="./images/card4.jpg" alt=""></div>
+    </div>
+    <div class="section group3">
+      <ul class="about">
+        <li class="name">김데레사</li>
+        <li class="job">패스트 캠퍼스 강사</li>
+        <li class="doing">HTML과 CSS를 가르치고 있어요.</li>
+      </ul>
+    </div>
+    <div class="section group4">
+      <div class="school">
+        <div class="title">UX/UI 디자인 스쿨</div>
+        <div class="location">성수역 2번출구 제강빌딩 8층</div>
+        <div class="tel"><a href="tel:1023456789">010-2345-6789</a></div>
+      </div>
+    </div>
   </div>
 
 
@@ -35,11 +51,11 @@
         menu: '#menu',
         lockAnchors: false,
         anchors: ['firstPage', 'secondPage'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['section1', 'section2', 'section3', 'section4'],
         showActiveTooltip: false,
-        slidesNavigation: true,
+        slidesNavigation: false,
         slidesNavPosition: 'bottom',
 
         //Scrolling
@@ -76,9 +92,9 @@
         recordHistory: true,
 
         //Design
-        controlArrows: false,
+        controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['yellow', 'salmon', 'lightseagreen', 'blueviolet'],
+        // sectionsColor: ['yellow', 'salmon', 'lightseagreen', 'blueviolet'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
